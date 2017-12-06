@@ -13,8 +13,8 @@ server {
 
   include conf.d/common.conf;
 
-  if ($http_host !~ "^iskconcommunications.org$"){
-    rewrite ^/(.*)$ "http://iskconcommunications.org/$1" redirect;
+  if ($http_host !~ "^www.iskconcommunications.org$"){
+    rewrite ^/(.*)$ "http://www.iskconcommunications.org/$1" redirect;
   }
 
   location / {
