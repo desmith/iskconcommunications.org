@@ -1,0 +1,72 @@
+﻿@charset "UTF-8";
+
+body {
+	margin: 1em 3em;
+	font-family: Tahoma, Genevam, sans-serif;
+}
+
+.rssFeed {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 90%;
+	margin: 2em 3em;
+    a {
+    	color: #444;
+    	text-decoration: none;
+    }
+    a:hover {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+.rssHeader { 
+    padding: 0.2em 0 0 10px; 
+    background: #000080;
+    a { color: #fff; }
+}
+
+.rssBody { 
+    border: 1px solid #999; 
+    ul { list-style: none; }
+}
+.rssBody ul, .rssRow, .rssRow h6, .rssRow p {
+	margin: 0;
+	padding: 0;
+}
+
+.rssRow { 
+    height: 110px;
+    padding: 0.8em; 
+    overflow: hidden;
+    p img {
+        margin-top: -15px;
+    }
+
+    h6 { 
+        font-size: 1.1em; 
+        position: relative;
+        left: 151px;
+        color: #000080;
+        a {
+            color: #000080;
+            font-weight: bold;
+        }
+        a:hover { color: #000080; }
+    }
+
+    div {
+        font-size: 90%;
+        color: #666;
+        margin: 0.2em 0 0.4em 0;
+    }
+
+}
+
+.odd { background-color: #fff; }
+.even { background-color: #fff; }
+
+.rssMedia {
+	padding: 0.5em;
+	font-size: 1em;
+}
+

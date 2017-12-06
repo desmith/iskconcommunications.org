@@ -1,0 +1,24 @@
+server {
+
+  server_name
+    .iskconcommunications.org
+    .iskconcommunications.co.uk
+    .iskconcommunications.us
+    .iskconcommunications.info
+    .iskconcommunications.net
+    .iskconcommunications.com
+  ;
+
+  root /var/www/iskconcommunications.org;
+
+  include conf.d/common.conf;
+
+  if ($http_host !~ "^iskconcommunications.org$"){
+    rewrite ^/(.*)$ "http://iskconcommunications.org/$1" redirect;
+  }
+
+  location / {
+    try_files $uri $uri/ /index.html;
+  }
+
+}
